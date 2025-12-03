@@ -7,18 +7,11 @@ import Text.Read (Lexeme (Char))
 main :: IO ()
 main = do
   args <- getArgs
-  let amountOfBatteries = (read $ head args :: Int)
-  contents <- readFile $ args !! 1
+  contents <- readFile $ head args
   let strings = words contents
-  let headStr = head strings
-  print headStr
-  print $ findGreatestCharValue headStr
-  print $ length headStr
-  let substr = substring headStr 0 (length headStr - 1)
-  print substr
-  let greatestChar = findGreatestCharValue substr
-  print $ findFirstIndexOf headStr greatestChar
-  print $ calculateJoltage amountOfBatteries strings
+
+  putStrLn ("Result part1: " ++ show (calculateJoltage 2 strings))
+  putStrLn ("Result part2: " ++ show (calculateJoltage 12 strings))
 
 calculateJoltage :: Int -> [String] -> Int
 calculateJoltage amountOfBatteries str = sum $ map (calculateLineJoltage amountOfBatteries) str

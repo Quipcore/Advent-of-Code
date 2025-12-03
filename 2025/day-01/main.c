@@ -67,7 +67,6 @@ int part2(array *array) {
 }
 
 int main(int argc, char *argv[]) {
-  printf("Hello World!\n");
   if (argc < 2) {
     printf("Argc is too low (%d)\n", argc);
     return EXIT_FAILURE;
@@ -93,7 +92,6 @@ int main(int argc, char *argv[]) {
 
   array.size = true_line_amount;
 
-  printf("Running AOC with %zd lines \n", array.size);
   printf("Result part1: %d\n", part1(&array));
   printf("Result part2: %d\n", part2(&array));
 
