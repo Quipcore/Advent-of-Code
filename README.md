@@ -3,14 +3,14 @@
 | Day | Language|
 | ----------- | ----------- |
 | Day 1| C |
-| Day 2 | N/A |
+| Day 2 | C++ |
 | Day 3 | Haskell |
-| Day 4 | N/A |
-| Day 5| N/A |
-| Day 6| N/A |
-| Day 7| N/A |
-| Day 8| N/A |
-| Day 9| N/A |
-| Day 10| N/A |
-| Day 11| N/A |
-| Day 12| N/A |
+| Day 4 | Rust |
+| Day 5| Elixir |
+| Day 6| Typescript |
+| Day 7| Go |
+| Day 8| Python |
+| Day 9| Scala |
+| Day 10 | Bash |
+| Day 11| Clojure |
+| Day 12| Java |
